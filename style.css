@@ -1,1 +1,138 @@
+/* Configuração Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+body {
+    background-color: #f4f9f4; /* Verde bem clarinho e suave */
+    color: #2c3e50;
+    scroll-behavior: smooth;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2e7d32; /* Verde folha */
+}
+
+nav a {
+    color: #555;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e17055; /* Coral chamativo ao passar o mouse */
+}
+
+/* Seção Principal (Hero) */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); /* Degradê suave */
+}
+
+.hero h1 {
+    font-size: 45px;
+    color: #1b5e20;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #e17055; /* Destaque em coral */
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Botão Dinâmico */
+.btn-principal {
+    background-color: #e17055;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(225, 112, 85, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-principal:hover {
+    background-color: #d05a3f;
+    transform: translateY(-3px); /* Efeito de flutuar */
+}
+
+/* Seção de Pilares (Cards) */
+.secao-pilares {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.secao-pilares h2 {
+    font-size: 32px;
+    color: #2e7d32;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Para funcionar bem no celular */
+}
+
+/* Cards Dinâmicos */
+.card {
+    background-color: white;
+    flex: 1;
+    min-width: 250px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* O card cresce um pouquinho */
+    box-shadow: 0 10px 25px rgba(46, 125, 50, 0.15); /* Sombra verde suave */
+}
+
+.card h3 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #2e7d32;
+    color: white;
+    font-size: 14px;
+}
